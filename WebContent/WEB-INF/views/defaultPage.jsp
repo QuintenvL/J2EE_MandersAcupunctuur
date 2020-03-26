@@ -9,13 +9,14 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <head>
 <meta charset="ISO-8859-1">
+<jsp:include page="headerLinks.jsp" />
 <title>${ page.getPageTitel()}</title>
 </head>
 <body>
+    <jsp:include page="navbar.jsp" />
     <div class="container">
-        <jsp:include page="navbar.jsp" />
         <c:out value="${page.getPageHtml() } " escapeXml="false" />
-        <jsp:include page="footer.jsp" />
     </div>
+    <jsp:include page="footer.jsp" />
 </body>
 </html>

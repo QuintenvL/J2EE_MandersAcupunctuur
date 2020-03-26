@@ -4,13 +4,15 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<jsp:include page="headerLinks.jsp" />
 <title>Welkom bij Manders Acupunctuur</title>
 </head>
 <body>
+    <jsp:include page="navbar.jsp" />
     <div class="container">
-        <jsp:include page="navbar.jsp" />
 
-        <h1>Welkome bij Manders Acupunctuur!</h1>
+
+        <h1>Welkom bij Manders Acupunctuur!</h1>
 
         <p>Hieronder staan verwijzingen naar verschillende pagina's.</p>
 
@@ -33,8 +35,7 @@
                 href="${pageContext.request.contextPath }/page/contact">Contact</a>
             pagina
         </p>
-
-        <jsp:include page="footer.jsp" />
     </div>
+    <jsp:include page="footer.jsp" />
 </body>
 </html>
