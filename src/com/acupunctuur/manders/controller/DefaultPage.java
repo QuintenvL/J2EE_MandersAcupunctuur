@@ -62,8 +62,23 @@ public class DefaultPage extends HttpServlet {
 		
 		RequestDispatcher view = request.getRequestDispatcher("/WEB-INF/views/defaultPage.jsp");
 		request.setAttribute("page", page);
-		System.out.println("The page name = " + page.getPageName());
-		System.out.println(request.getRequestURL());
         view.forward(request, response);
+	}
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	    String pageContent = request.getParameter("editor");
+	    int pageId = Integer.parseInt(request.getParameter("pageId"));
+	    try {
+            pageEJB.changePageContent(pageId, pageContent);
+        }
+        catch (SQLException e) {
+            System.out.println("SQL exception : ");
+            e.printStackTrace();
+        }
+        catch (DatabaseException ex) {
+            System.out.println("database exception : ");
+            ex.printStackTrace();
+        }
+	    doGet(request,response);
 	}
 }

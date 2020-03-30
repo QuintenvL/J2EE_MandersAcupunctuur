@@ -63,6 +63,15 @@ ul {
     list-style-type: circle;
 }
 
+.bewerk-button {
+    margin: 1%;
+    position: absolute;
+}
+
+.form-editor {
+    display: none;
+}
+
 
 .footer {
     padding: .3rem 1rem;

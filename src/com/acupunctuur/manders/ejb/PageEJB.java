@@ -31,4 +31,16 @@ public class PageEJB {
         }
         return result;
     }
+    
+    public void changePageContent(int pageId, String pageContent) throws SQLException, DatabaseException {
+        Query q = em.createQuery("UPDATE Page p SET p.pageHtml = :content WHERE p.pageId = :id");
+        q.setParameter("content", pageContent);
+        q.setParameter("id", pageId);
+        try {
+            q.executeUpdate();
+        }
+        catch (Exception e) {
+            return;
+        }
+    }
 }

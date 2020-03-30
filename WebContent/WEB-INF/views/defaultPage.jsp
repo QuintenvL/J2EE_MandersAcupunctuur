@@ -14,9 +14,26 @@
 </head>
 <body>
     <jsp:include page="navbar.jsp" />
+
+    <button id="bewerk-button" class="bewerk-button btn">Bewerk
+        pagina</button>
     <div class="container">
+        <form id="form-editor" class="form-editor"
+            action="${page.getPageName() }" method="post">
+            <textarea name="editor" id="editor" class="editor">
         <c:out value="${page.getPageHtml() } " escapeXml="false" />
+        </textarea>
+        <input type="hidden" value="${page.getPageId() }" name="pageId"></input>
+        </form>
+
+        <div id="normal-content" class="normal-content">
+            <c:out value="${page.getPageHtml() } " escapeXml="false" />
+        </div>
     </div>
     <jsp:include page="footer.jsp" />
+    <script
+        src="${pageContext.request.contextPath }/ckeditor/ckeditor.js"></script>
+    <script
+        src="${pageContext.request.contextPath }/resources/scripts/editor.js"></script>
 </body>
 </html>
