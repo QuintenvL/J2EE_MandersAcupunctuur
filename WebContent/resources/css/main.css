@@ -1,0 +1,80 @@
+@charset "ISO-8859-1";
+
+:root {
+    --background-navbar: #2c6ec4;
+    --background-footer: #504f4f;
+    --background-body: #f3653ae8;
+    --link-color: #f0e3e3;
+}
+
+.navbar-logo {
+    height: 50px;
+}
+
+.navbar {
+    background-color: var(--background-navbar);
+}
+
+.nav-link {
+    font-weight: bold;
+}
+
+.container {
+    padding-top: 1%;
+    padding-bottom: 4%;
+    
+}
+
+p, li {
+    color: white;
+}
+
+p {
+    margin-bottom: 2px;
+}
+
+a {
+    color: var(--link-color);
+    font-style: italic;
+}
+
+a:hover {
+    text-decoration: none;
+    font-weight: bolder;
+    color:var(--link-color);
+}
+
+h2,h3,h4 {
+    color: white;
+    font-weight:bold;
+}
+
+h1 {
+    color: var(--yellow);
+    margin-bottom: 10px;
+    border-bottom: 1px solid red;
+}
+
+body {
+    background-color: var(--background-body);
+}
+
+ul {
+    list-style-type: circle;
+}
+
+.bewerk-button {
+    margin: 1%;
+    position: absolute;
+}
+
+.form-editor {
+    display: none;
+}
+
+
+.footer {
+    padding: .3rem 1rem;
+    background-color: var(--background-footer);
+    font-weight: bold;
+}
