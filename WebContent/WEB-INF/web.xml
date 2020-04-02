@@ -13,8 +13,4 @@
 		<servlet-name>javax.ws.rs.core.Application</servlet-name>
 		<url-pattern>/api/*</url-pattern>
 	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>Faces servlet</servlet-name>
-		<url-pattern>*.jsp</url-pattern>
-	</servlet-mapping>
 </web-app>

@@ -14,6 +14,7 @@
 </head>
 <body>
     <jsp:include page="navbar.jsp" />
+    <span id="ctx" style="display:none;">${pageContext.request.contextPath }</span>
 
     <button id="bewerk-button" class="bewerk-button btn">Bewerk
         pagina</button>

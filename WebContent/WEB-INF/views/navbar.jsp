@@ -11,7 +11,7 @@
     <a class="navbar-brand"
         href="${pageContext.request.contextPath }/home"> 
         <img class="navbar-logo"
-        src="${pageContext.request.contextPath }/resources/images/MA-logo.png"
+        src="${pageContext.request.contextPath }/resources/uploads/MA-logo.png"
         alt="Manders logo"></a>
     <ul class="navbar-nav ml-auto">
         <li class="nav-item"><a class="nav-link text-white"
