@@ -17,7 +17,7 @@ import com.acupunctuur.manders.service.FileUploadService;
 import com.google.gson.Gson;
 
 /**
- * Servlet implementation class ImageUpload
+ * Servlet implementation class FileUpload
  */
 @WebServlet("/fileupload")
 @MultipartConfig (
